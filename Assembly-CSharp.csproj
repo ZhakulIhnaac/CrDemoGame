@@ -74,6 +74,7 @@
     <Compile Include="Assets\Scripts\Classes\Gameplay\PipeGameController.cs" />
     <Compile Include="Assets\Scripts\Classes\Playables\InstallmentControl.cs" />
     <Compile Include="Assets\Scripts\Classes\Playables\PipeControl.cs" />
+    <Compile Include="Assets\Scripts\Classes\Playables\VirtualsControl.cs" />
     <Compile Include="Assets\Scripts\Classes\Playables\WaterDestinationControl.cs" />
     <Compile Include="Assets\Scripts\Classes\Playables\WaterSourceControl.cs" />
     <Compile Include="Assets\Scripts\Classes\UI\BuildingSvContent.cs" />

@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 3417475149278025416}
   - component: {fileID: 3417475149278025417}
   - component: {fileID: 3417475149278025414}
-  - component: {fileID: 3417475149278025415}
-  - component: {fileID: -5493328348785036200}
+  - component: {fileID: -6307010199258091949}
+  - component: {fileID: -2894504773222875039}
   - component: {fileID: -5476411534106358973}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: WaterSourceCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,7 +83,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &3417475149278025415
+--- !u!65 &-6307010199258091949
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,9 +94,9 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.85693014, z: 0.91852474}
-  m_Center: {x: 0, y: -0.004914701, z: 0.04073763}
---- !u!114 &-5493328348785036200
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-2894504773222875039
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -105,11 +105,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 3417475149278025412}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ee91377f7d608d4291a05a31d06df09, type: 3}
+  m_Script: {fileID: 11500000, guid: 95a69494cd238b04ca7fcacd37b5e6a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 90
-  isTemplate: 0
+  isTemplate: 1
   isFilledWithWater: 0
 --- !u!54 &-5476411534106358973
 Rigidbody:
@@ -193,21 +193,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: WaterSource
-      objectReference: {fileID: 0}
-    - target: {fileID: 3270654924242410257, guid: fb458aa6d3c66cc4bba79e9c02ad58e4,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 9038717840405905036, guid: fb458aa6d3c66cc4bba79e9c02ad58e4,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 9038717840405905036, guid: fb458aa6d3c66cc4bba79e9c02ad58e4,
-        type: 3}
-      propertyPath: m_Name
-      value: Depo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb458aa6d3c66cc4bba79e9c02ad58e4, type: 3}

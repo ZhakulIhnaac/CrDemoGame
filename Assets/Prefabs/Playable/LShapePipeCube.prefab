@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 1596813524280165704}
   - component: {fileID: 898145289133948947}
   - component: {fileID: 2114896969448354160}
-  - component: {fileID: 4281051186207679296}
-  - component: {fileID: -2019434491381967893}
+  - component: {fileID: 2911259287655446831}
+  - component: {fileID: 2304623111187563019}
   - component: {fileID: 4391404742903052621}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: LShapePipeCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,7 +83,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &4281051186207679296
+--- !u!65 &2911259287655446831
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,9 +94,9 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.94304824, y: 0.88128495, z: 0.90748787}
-  m_Center: {x: -0.02847588, y: -0.010406494, z: -0.046256065}
---- !u!114 &-2019434491381967893
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2304623111187563019
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -105,11 +105,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7384140691070533403}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94457477498c17141a5e9fb21840f8ac, type: 3}
+  m_Script: {fileID: 11500000, guid: 95a69494cd238b04ca7fcacd37b5e6a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 90
-  isTemplate: 0
+  isTemplate: 1
   isFilledWithWater: 0
 --- !u!54 &4391404742903052621
 Rigidbody:
@@ -189,40 +189,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2174149170053520748, guid: 6e78134879b2d3b45a9a39d5478c05c8,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.33333334
-      objectReference: {fileID: 0}
-    - target: {fileID: 2174149170053520748, guid: 6e78134879b2d3b45a9a39d5478c05c8,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.33333334
-      objectReference: {fileID: 0}
-    - target: {fileID: 2174149170053520748, guid: 6e78134879b2d3b45a9a39d5478c05c8,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.33333334
-      objectReference: {fileID: 0}
     - target: {fileID: 2915932317242814335, guid: 6e78134879b2d3b45a9a39d5478c05c8,
         type: 3}
       propertyPath: m_Name
       value: LShapePipe
-      objectReference: {fileID: 0}
-    - target: {fileID: 2915932317242814335, guid: 6e78134879b2d3b45a9a39d5478c05c8,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8681588034429127394, guid: 6e78134879b2d3b45a9a39d5478c05c8,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8681588034429127394, guid: 6e78134879b2d3b45a9a39d5478c05c8,
-        type: 3}
-      propertyPath: m_Name
-      value: Pipe
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e78134879b2d3b45a9a39d5478c05c8, type: 3}

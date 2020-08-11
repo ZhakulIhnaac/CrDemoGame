@@ -13,6 +13,7 @@ namespace Assets.Scripts.Classes.UI
         public GameObject TileTheCursorIsOn;
         [SerializeField] private LayerMask _playableLayerMask;
         [SerializeField] private LayerMask _groundLayerMask;
+        [SerializeField] private LayerMask _virtualLayerMask;
 
         private void Awake()
         {
@@ -53,7 +54,7 @@ namespace Assets.Scripts.Classes.UI
                         }
                         else
                         {
-                            PlaceablePipe.GetComponent<InstallmentControl>().isTemplate = false;
+                            PlaceablePipe.GetComponent<VirtualsControl>().isTemplate = false;
                             PlaceablePipe = null;
                             GridSystem.Instance.NodeFromWorldPosition(TileTheCursorIsOn.transform.position).isObstructed = true;
                         }
@@ -70,7 +71,7 @@ namespace Assets.Scripts.Classes.UI
                     {
                         RaycastHit hit;
                         var mouseRayToSend = Camera.main.ScreenPointToRay(Input.mousePosition);
-                        var didPlayableHit = Physics.Raycast(mouseRayToSend.origin, mouseRayToSend.direction, out hit, Mathf.Infinity, _playableLayerMask);
+                        var didPlayableHit = Physics.Raycast(mouseRayToSend.origin, mouseRayToSend.direction, out hit, Mathf.Infinity, _virtualLayerMask);
                         Debug.Log(hit.collider);
                         if (hit.collider != null)
                         {

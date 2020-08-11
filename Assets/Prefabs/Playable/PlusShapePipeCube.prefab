@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 7427575281615105639}
   - component: {fileID: 7395102480049564003}
   - component: {fileID: 1677434473174787485}
-  - component: {fileID: -5217083520552010723}
-  - component: {fileID: -2912756079473779611}
+  - component: {fileID: 3073344204007589421}
+  - component: {fileID: 9037784986516847693}
   - component: {fileID: -6033255871852095869}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: PlusShapePipeCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,7 +83,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &-5217083520552010723
+--- !u!65 &3073344204007589421
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,9 +94,9 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.8599286, z: 1}
-  m_Center: {x: 0, y: 0.0018928051, z: 0}
---- !u!114 &-2912756079473779611
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &9037784986516847693
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -105,11 +105,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7355343188803517210}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94457477498c17141a5e9fb21840f8ac, type: 3}
+  m_Script: {fileID: 11500000, guid: 95a69494cd238b04ca7fcacd37b5e6a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 90
-  isTemplate: 0
+  isTemplate: 1
   isFilledWithWater: 0
 --- !u!54 &-6033255871852095869
 Rigidbody:
@@ -134,11 +134,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7427575281615105639}
     m_Modifications:
-    - target: {fileID: 4163380381076864715, guid: c718949ee78102d429508a853c67d6af,
-        type: 3}
-      propertyPath: m_Name
-      value: Pipe
-      objectReference: {fileID: 0}
     - target: {fileID: 6886108364137605445, guid: c718949ee78102d429508a853c67d6af,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -193,21 +188,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6886108364137605445, guid: c718949ee78102d429508a853c67d6af,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.33333334
-      objectReference: {fileID: 0}
-    - target: {fileID: 6886108364137605445, guid: c718949ee78102d429508a853c67d6af,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.33333334
-      objectReference: {fileID: 0}
-    - target: {fileID: 6886108364137605445, guid: c718949ee78102d429508a853c67d6af,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.33333334
       objectReference: {fileID: 0}
     - target: {fileID: 7623194260498701142, guid: c718949ee78102d429508a853c67d6af,
         type: 3}

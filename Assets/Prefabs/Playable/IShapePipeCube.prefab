@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 8692016283889411289}
   - component: {fileID: 867312579640231751}
   - component: {fileID: 6016944334742427963}
-  - component: {fileID: -329339957721816151}
-  - component: {fileID: 4400110033595014613}
+  - component: {fileID: -8294867234863374438}
+  - component: {fileID: 6342928164346753929}
   - component: {fileID: 4988214492271030928}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: IShapePipeCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,7 +83,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &-329339957721816151
+--- !u!65 &-8294867234863374438
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,9 +94,9 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.9287214, y: 0.9151895, z: 1}
-  m_Center: {x: -0.0019800663, y: -0.0026503801, z: 0}
---- !u!114 &4400110033595014613
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6342928164346753929
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -105,11 +105,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 6308282324802197170}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94457477498c17141a5e9fb21840f8ac, type: 3}
+  m_Script: {fileID: 11500000, guid: 95a69494cd238b04ca7fcacd37b5e6a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 90
-  isTemplate: 0
+  isTemplate: 1
   isFilledWithWater: 0
 --- !u!54 &4988214492271030928
 Rigidbody:
@@ -134,25 +134,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8692016283889411289}
     m_Modifications:
-    - target: {fileID: 1095440016965004187, guid: 05622ab032db30446961726c7707ba4e,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1095440016965004187, guid: 05622ab032db30446961726c7707ba4e,
-        type: 3}
-      propertyPath: m_Name
-      value: Pipe
-      objectReference: {fileID: 0}
     - target: {fileID: 6863347617981173254, guid: 05622ab032db30446961726c7707ba4e,
         type: 3}
       propertyPath: m_Name
       value: IShapePipe
-      objectReference: {fileID: 0}
-    - target: {fileID: 6863347617981173254, guid: 05622ab032db30446961726c7707ba4e,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7594436297878174741, guid: 05622ab032db30446961726c7707ba4e,
         type: 3}
@@ -209,31 +194,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7594436297878174741, guid: 05622ab032db30446961726c7707ba4e,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.33333334
-      objectReference: {fileID: 0}
-    - target: {fileID: 7594436297878174741, guid: 05622ab032db30446961726c7707ba4e,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.33333334
-      objectReference: {fileID: 0}
-    - target: {fileID: 7594436297878174741, guid: 05622ab032db30446961726c7707ba4e,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.33333334
-      objectReference: {fileID: 0}
-    - target: {fileID: 8243951402456946446, guid: 05622ab032db30446961726c7707ba4e,
-        type: 3}
-      propertyPath: m_ReceiveShadows
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8243951402456946446, guid: 05622ab032db30446961726c7707ba4e,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 71e6379d3d5f7274095ed9fbcbc868bc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05622ab032db30446961726c7707ba4e, type: 3}
 --- !u!4 &1145611374327178611 stripped
