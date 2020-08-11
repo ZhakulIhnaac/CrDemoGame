@@ -110,7 +110,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 90
   isTemplate: 1
-  isFilledWithWater: 0
 --- !u!54 &-5476411534106358973
 Rigidbody:
   m_ObjectHideFlags: 0

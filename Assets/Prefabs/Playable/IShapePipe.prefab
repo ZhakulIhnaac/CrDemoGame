@@ -123,6 +123,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94457477498c17141a5e9fb21840f8ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waterSupplierList: []
+  collidingPipesList: []
   isFilledWithWater: 0
 --- !u!1 &6863347617981173254
 GameObject:

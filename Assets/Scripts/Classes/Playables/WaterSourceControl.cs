@@ -7,4 +7,9 @@ public class WaterSourceControl : InstallmentControl
         isFilledWithWater = true;
         GetComponent<Renderer>().material.color = Color.blue;
     }
+
+    protected override void EmptyWater()
+    {
+
+    }
 }

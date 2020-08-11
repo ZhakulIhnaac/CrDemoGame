@@ -1,7 +1,6 @@
-﻿using UnityEditor.SceneManagement;
-using UnityEngine.SceneManagement;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+using UnityEngine.SceneManagement;
 
 public class LevelEditorController : MonoBehaviour
 {
@@ -16,11 +15,18 @@ public class LevelEditorController : MonoBehaviour
         {
             Instance = this;
         }
+
+        WaterDestinationControl.Victory += GameOver;
     }
 
     public void LoadLevel(string LevelName)
     {
         SceneManager.LoadScene(LevelName, LoadSceneMode.Single);
+    }
+
+    private void GameOver()
+    {
+        Debug.Log("GameOver");
     }
     
     //public void ExportLevelAsNewScene()

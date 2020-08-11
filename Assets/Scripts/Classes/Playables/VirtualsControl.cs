@@ -1,9 +1,11 @@
 ﻿using Assets.Scripts.Classes.UI;
+using System;
 using System.Collections;
 using UnityEngine;
 
 public class VirtualsControl : MonoBehaviour
 {
+    public static event Action IJustRotated;
     public float rotationSpeed;
     protected bool rotationCoroutineWorking;
     public bool isTemplate;
@@ -30,5 +32,6 @@ public class VirtualsControl : MonoBehaviour
         }
         transform.rotation = targetRotation;
         rotationCoroutineWorking = false;
+        IJustRotated?.Invoke();
     }
 }

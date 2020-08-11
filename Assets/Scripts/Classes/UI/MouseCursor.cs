@@ -54,8 +54,22 @@ namespace Assets.Scripts.Classes.UI
                         }
                         else
                         {
-                            PlaceablePipe.GetComponent<VirtualsControl>().isTemplate = false;
-                            PlaceablePipe = null;
+                            var newPipe = Instantiate(PlaceablePipe, PlaceablePipe.transform.position, Quaternion.identity);
+
+                            foreach (Collider collider in newPipe.transform.GetChild(0).GetChild(0).gameObject.GetComponents<Collider>())
+                            {
+                                collider.enabled = true;
+                            }
+
+                            newPipe.transform.SetParent(LevelEditorController.Instance.PlayableObjectsGroup.transform);
+                            newPipe.GetComponent<VirtualsControl>().isTemplate = false;
+
+                            if (!Input.GetKey(KeyCode.LeftShift))
+                            {
+                                PlaceablePipe.GetComponent<VirtualsControl>().isTemplate = false;
+                                Destroy(PlaceablePipe);
+                            }
+
                             GridSystem.Instance.NodeFromWorldPosition(TileTheCursorIsOn.transform.position).isObstructed = true;
                         }
                     }

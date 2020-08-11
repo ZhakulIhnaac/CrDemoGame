@@ -77,12 +77,8 @@
     <Compile Include="Assets\Scripts\Classes\Playables\VirtualsControl.cs" />
     <Compile Include="Assets\Scripts\Classes\Playables\WaterDestinationControl.cs" />
     <Compile Include="Assets\Scripts\Classes\Playables\WaterSourceControl.cs" />
-    <Compile Include="Assets\Scripts\Classes\UI\BuildingSvContent.cs" />
-    <Compile Include="Assets\Scripts\Classes\UI\GuiController.cs" />
     <Compile Include="Assets\Scripts\Classes\UI\MouseCursor.cs" />
     <Compile Include="Assets\Scripts\Classes\UI\PipePlaceButton.cs" />
-    <Compile Include="Assets\Scripts\Classes\UI\UnitProduction.cs" />
-    <Compile Include="Assets\Scripts\Classes\UI\UnitsMenuContent.cs" />
     <Compile Include="Assets\Scripts\Constants\Dictionary.cs" />
     <Compile Include="Assets\Scripts\Interfaces\IBarrack.cs" />
     <Compile Include="Assets\Scripts\Interfaces\IBuilding.cs" />
