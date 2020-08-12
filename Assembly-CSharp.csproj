@@ -63,37 +63,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Classes\Gameplay\GameController.cs" />
+    <Compile Include="Assets\Scripts\Classes\EditorExecutables\GridSnapper.cs" />
+    <Compile Include="Assets\Scripts\Classes\EditorExecutables\MouseCursor.cs" />
+    <Compile Include="Assets\Scripts\Classes\EditorExecutables\Node.cs" />
+    <Compile Include="Assets\Scripts\Classes\EditorExecutables\SaveGame.cs" />
     <Compile Include="Assets\Scripts\Classes\Gameplay\GridSystem.cs" />
     <Compile Include="Assets\Scripts\Classes\Gameplay\LevelCamera.cs" />
-    <Compile Include="Assets\Scripts\Classes\Gameplay\LevelEditorCamera.cs" />
     <Compile Include="Assets\Scripts\Classes\Gameplay\LevelEditorController.cs" />
     <Compile Include="Assets\Scripts\Classes\Gameplay\LevelsMenuController.cs" />
     <Compile Include="Assets\Scripts\Classes\Gameplay\MainMenuSceneController.cs" />
-    <Compile Include="Assets\Scripts\Classes\Gameplay\Node.cs" />
     <Compile Include="Assets\Scripts\Classes\Gameplay\PipeGameController.cs" />
     <Compile Include="Assets\Scripts\Classes\Playables\InstallmentControl.cs" />
     <Compile Include="Assets\Scripts\Classes\Playables\PipeControl.cs" />
     <Compile Include="Assets\Scripts\Classes\Playables\VirtualsControl.cs" />
     <Compile Include="Assets\Scripts\Classes\Playables\WaterDestinationControl.cs" />
     <Compile Include="Assets\Scripts\Classes\Playables\WaterSourceControl.cs" />
-    <Compile Include="Assets\Scripts\Classes\UI\MouseCursor.cs" />
-    <Compile Include="Assets\Scripts\Classes\UI\PipePlaceButton.cs" />
     <Compile Include="Assets\Scripts\Constants\Dictionary.cs" />
-    <Compile Include="Assets\Scripts\Interfaces\IBarrack.cs" />
-    <Compile Include="Assets\Scripts\Interfaces\IBuilding.cs" />
-    <Compile Include="Assets\Scripts\Interfaces\IBuildingProductionButton.cs" />
-    <Compile Include="Assets\Scripts\Interfaces\IBuildingSvContent.cs" />
-    <Compile Include="Assets\Scripts\Interfaces\IBuildingTemplate.cs" />
-    <Compile Include="Assets\Scripts\Interfaces\ICursor.cs" />
-    <Compile Include="Assets\Scripts\Interfaces\IInteractable.cs" />
-    <Compile Include="Assets\Scripts\Interfaces\IMainGame.cs" />
-    <Compile Include="Assets\Scripts\Interfaces\IObjectPooling.cs" />
-    <Compile Include="Assets\Scripts\Interfaces\IPlayable.cs" />
-    <Compile Include="Assets\Scripts\Interfaces\IPowerPlant.cs" />
-    <Compile Include="Assets\Scripts\Interfaces\ISoldier.cs" />
-    <Compile Include="Assets\Scripts\Interfaces\IUnitProduction.cs" />
-    <Compile Include="Assets\Scripts\Interfaces\IUnitsMenuContent.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />

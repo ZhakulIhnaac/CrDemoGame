@@ -19,10 +19,9 @@ public class InstallmentControl : MonoBehaviour
 
         if (collider.GetComponent<InstallmentControl>().isFilledWithWater)
         {
-            waterSupplierList.Add(collider.gameObject);
-
             if (!isFilledWithWater)
             {
+                waterSupplierList.Add(collider.gameObject);
                 FillWithWater();
             }
         }
@@ -43,7 +42,7 @@ public class InstallmentControl : MonoBehaviour
         }
     }
 
-    private void FillWithWater()
+    protected virtual void FillWithWater()
     {
         isFilledWithWater = true;
         pipeRenderer.material.color = Color.blue;

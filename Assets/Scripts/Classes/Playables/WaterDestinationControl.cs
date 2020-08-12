@@ -4,16 +4,19 @@ using UnityEngine;
 public class WaterDestinationControl : InstallmentControl
 {
     public static event Action Victory;
+
     private void Awake()
     {
+        pipeRenderer = GetComponent<Renderer>();
         isFilledWithWater = false;
-        GetComponent<Renderer>().material.color = Color.white;
+        pipeRenderer.material.color = Color.white;
     }
 
-    private void GameOver()
+    protected override void FillWithWater()
     {
         isFilledWithWater = true;
-        GetComponent<Renderer>().material.color = Color.blue;
+        pipeRenderer.material.color = Color.blue;
         Victory?.Invoke();
     }
+
 }

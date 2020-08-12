@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -3033667219593020291, guid: 313eaf954e6bbcf46b64c9d36ec0330c, type: 3}
+  - {fileID: 2100000, guid: 71e6379d3d5f7274095ed9fbcbc868bc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -140,6 +140,7 @@ MonoBehaviour:
   waterSupplierList: []
   collidingPipesList: []
   isFilledWithWater: 0
+  pipeRenderer: {fileID: 0}
 --- !u!1 &7623194260498701142
 GameObject:
   m_ObjectHideFlags: 0

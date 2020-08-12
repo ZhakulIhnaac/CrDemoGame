@@ -1,4 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using Assets.Scripts.Constants;
+using System.Collections.Generic;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -6,8 +10,10 @@ public class LevelEditorController : MonoBehaviour
 {
     public static LevelEditorController Instance;
     public GameObject PlayableObjectsGroup;
-    public GameObject LevelName;
     public GameObject GroundGroup;
+    public GameObject LevelCamera;
+    public List<GameObject> PipesList = new List<GameObject>();
+    public string LevelName;
 
     private void Awake()
     {
@@ -28,27 +34,46 @@ public class LevelEditorController : MonoBehaviour
     {
         Debug.Log("GameOver");
     }
-    
-    //public void ExportLevelAsNewScene()
-    //{
-    //    var NewScene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Additive);
-    //    NewScene.name = LevelName.GetComponent<TextMeshProUGUI>().text;
 
-    //    // Moving game objects to new scene
-    //    SceneManager.MoveGameObjectToScene(PlayableObjectsGroup, NewScene);
+    public void SaveGame()
+    {
+        if (LevelName == "")
+        {
+            Debug.LogError(GameDictionary.EnterLevelName);
+            return;
+        }
 
-    //    var pathToSave = EditorSceneManager.GetActiveScene().path.Split(char.Parse("/"));
-    //    pathToSave[pathToSave.Length - 1] = NewScene.name + ".unity"; 
-    //    bool isSaved = EditorSceneManager.SaveScene(EditorSceneManager.GetActiveScene(), string.Join("/", pathToSave));
+        if (Directory.Exists(Application.dataPath + "/Levels/" + LevelName + ".levelSave"))
+        {
+            Debug.LogError(GameDictionary.PathAlreadyExists);
+            return;
+        }
 
-    //    if (isSaved)
-    //    {
-    //        Debug.Log("Kaydedildi");
-    //    }
-    //    else
-    //    {
-    //        Debug.Log("Kaydedilemedi");
-    //    }
+        Save save = CreateSaveGameObject();
+        string json = JsonUtility.ToJson(save);
+        Debug.Log("Saving With Binary Formatter: " + LevelName);
+        BinaryFormatter bf = new BinaryFormatter();
+        FileStream file = File.Create(Application.dataPath + "/Levels/" + LevelName +".levelSave");
+        bf.Serialize(file, json);
+        file.Close();
+    }
 
-    //}
+    public void LoadGame()
+    {
+        BinaryFormatter bf = new BinaryFormatter();
+        FileStream file = File.Open(Application.persistentDataPath + "/gamesave.save", FileMode.Open);
+        Save save = (Save)bf.Deserialize(file);
+        file.Close();
+    }
+
+    private Save CreateSaveGameObject()
+    {
+        Save save = new Save
+        {
+            groundGroup = GroundGroup,
+            playableGroup = PlayableObjectsGroup
+        };
+
+        return save;
+    }
 }

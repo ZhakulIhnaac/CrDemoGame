@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -6903274828966818530}
   - component: {fileID: 4620762808797365572}
   - component: {fileID: -9046097299344670565}
+  - component: {fileID: 2310884927392167844}
   m_Layer: 10
   m_Name: WaterDestinationCube
   m_TagString: Untagged
@@ -126,6 +127,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &2310884927392167844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9126097983997537443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbc3d499bc7cb8c438a858bb56d04e41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5791694201730499281
 PrefabInstance:
   m_ObjectHideFlags: 0
