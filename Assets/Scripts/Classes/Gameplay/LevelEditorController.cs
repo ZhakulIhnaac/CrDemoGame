@@ -12,6 +12,7 @@ public class LevelEditorController : MonoBehaviour
     public GameObject PlayableObjectsGroup;
     public GameObject GroundGroup;
     public GameObject LevelCamera;
+    public GameObject LevelLight;
     public List<GameObject> PipesList = new List<GameObject>();
     public string LevelName;
 

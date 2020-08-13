@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3350504559126116585}
   - component: {fileID: 3350504559126116590}
   - component: {fileID: 3350504559126116591}
+  - component: {fileID: 1735662935}
   m_Layer: 0
   m_Name: LevelCamera
   m_TagString: MainCamera
@@ -58,7 +59,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000.09
-  field of view: 21
+  field of view: 60
   orthographic: 0
   orthographic size: 10.218634
   m_Depth: -1
@@ -93,6 +94,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 3350504559126116588}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e38b7ff67f366443a48db7be7a3f1fb, type: 3}
+  m_Script: {fileID: 11500000, guid: 495144fdb5c6550459bdb8471ce2244d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1735662935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3350504559126116588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16835059c96587647b873d18fcd14e14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

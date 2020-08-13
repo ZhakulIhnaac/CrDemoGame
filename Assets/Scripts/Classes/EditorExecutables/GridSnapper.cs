@@ -10,7 +10,7 @@ namespace Assets.Scripts.Classes.UI
         {
             if (GridSystem.Instance != null)
             {
-                gameObject.transform.position = new Vector3(Mathf.Floor(gameObject.transform.position.x) + GridSystem.Instance.NodeRadius, 0, Mathf.Floor(gameObject.transform.position.z) + GridSystem.Instance.NodeRadius);
+                transform.position = new Vector3(Mathf.Floor(gameObject.transform.position.x) + GridSystem.Instance.NodeRadius, 0, Mathf.Floor(gameObject.transform.position.z) + GridSystem.Instance.NodeRadius);
             }
         }
     }

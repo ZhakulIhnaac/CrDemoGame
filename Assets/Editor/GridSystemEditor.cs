@@ -16,14 +16,6 @@ public class GridSystemEditor : Editor
             gridSystem.CreateGrid();
         }
     }
-
-
-
-
-    public void ExportLevelAsNewScene(GameObject PlayableObjectsGroup, GameObject GroundGroup, GameObject LevelName)
-    {
-        
-    }
 }
 
 //public void ExportLevelAsNewScene()

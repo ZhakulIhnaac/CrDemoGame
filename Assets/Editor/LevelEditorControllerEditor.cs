@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using Assets.Scripts.Classes.Gameplay;
+using TMPro;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
@@ -23,18 +24,19 @@ public class LevelEditorControllerEditor : Editor
 
         if (GUILayout.Button("Save Level"))
         {
+            var sceneEditorPath = EditorSceneManager.GetActiveScene().path;
+
             var newScene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Additive);
             EditorSceneManager.MoveGameObjectToScene(Instantiate(levelEditorController.GroundGroup), newScene);
             EditorSceneManager.MoveGameObjectToScene(Instantiate(levelEditorController.PlayableObjectsGroup), newScene);
             EditorSceneManager.MoveGameObjectToScene(Instantiate(levelEditorController.LevelCamera), newScene);
+            EditorSceneManager.MoveGameObjectToScene(Instantiate(levelEditorController.LevelLight), newScene);
 
-            string[] path = EditorSceneManager.GetActiveScene().path.Split(char.Parse("/"));
+            string[] newScenePath = sceneEditorPath.Split(char.Parse("/"));
 
-            path[path.Length - 1] = levelEditorController.LevelName + ".unity";
+            newScenePath[newScenePath.Length - 1] = levelEditorController.LevelName + ".unity";
 
-            bool saveOK = EditorSceneManager.SaveScene(newScene, string.Join("/", path));
-
-            Debug.Log(saveOK);
+            bool saveOK = EditorSceneManager.SaveScene(newScene, string.Join("/", newScenePath));
 
             //levelEditorController.SaveGame();
         }
